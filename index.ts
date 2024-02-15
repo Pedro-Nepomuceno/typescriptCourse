@@ -15,3 +15,5 @@ console.log(person);
 function someString(str: string): void {
   console.log(`some message here ${str}`);
 }
+
+// The never keyword, can help catch errors on compile time instead of runtime, it
