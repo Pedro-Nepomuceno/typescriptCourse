@@ -17,3 +17,5 @@ function someString(str: string): void {
 }
 
 // The never keyword, can help catch errors on compile time instead of runtime, it
+
+//typescript 2 week
