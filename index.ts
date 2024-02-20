@@ -27,3 +27,21 @@ function greating(person: string) {
 // in the example below we use annotation to tell what kind of data this function is returning
 
 const multiply = (x: number, y: number): number => x * y;
+
+// when I function doesnt return anything we need to use the keyword VOID,
+
+function noReturn(x: string): void {
+  console.log(x);
+}
+
+// the keyword never indicate that some code path should never be reached, it help catching error at compile time instead of runtime
+// we gonna use never for functions that 1 - throws errors 2 - a function that has infinite loop 3 - a variable that can never have a value
+// for example middleware function that throws error on express.js
+
+function throwError(msg: string): never {
+  throw new Error(msg);
+}
+
+// creating array in typescript
+
+const number: number[] = [1, 2, 3, 4];
