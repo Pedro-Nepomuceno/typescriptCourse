@@ -45,3 +45,10 @@ function throwError(msg: string): never {
 // creating array in typescript
 
 const number: number[] = [1, 2, 3, 4];
+
+const names: Array<string> = ["Pedro", "Pedro2"];
+
+const nestedArray: number[][] = [
+  [1, 2, 3],
+  [3, 2, 1],
+];
