@@ -24,3 +24,6 @@ function someString(str: string): void {
 function greating(person: string) {
   console.log(`hello ${person}`);
 }
+// in the example below we use annotation to tell what kind of data this function is returning
+
+const multiply = (x: number, y: number): number => x * y;
