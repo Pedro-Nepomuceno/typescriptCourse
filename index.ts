@@ -18,4 +18,9 @@ function someString(str: string): void {
 
 // The never keyword, can help catch errors on compile time instead of runtime, it
 
-//typescript 2 week
+//annotation on function
+
+// in the example below we are just annotating the tyoe of parameter this function can take
+function greating(person: string) {
+  console.log(`hello ${person}`);
+}
