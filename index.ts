@@ -1,12 +1,3 @@
-type Person = {
-  name: string;
-};
-
-const person: Person = {
-  name: "John",
-};
-console.log(person);
-
 // anotations are used to specify a data type of a variable, parameter, function return value and other types of values.
 //annotation help developers catch error early in development
 
@@ -52,3 +43,24 @@ const nestedArray: number[][] = [
   [1, 2, 3],
   [3, 2, 1],
 ];
+
+// objects in Typescript
+
+const newObject: { firstName: string; email: string; age: number } = {
+  firstName: "Pedro",
+  email: "pedro@pedro.com",
+  age: 34,
+};
+
+// type Alias
+
+type Person = {
+  name: string;
+  age: number;
+};
+
+function printPerson(person: Person) {
+  console.log(`name: ${person.name}, Age ${person.age}`);
+}
+const myPerson: Person = { name: "Pedro", age: 34 };
+printPerson(myPerson);
