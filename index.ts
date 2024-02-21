@@ -66,8 +66,22 @@ const myPerson: Person = { name: "Pedro", age: 34 };
 printPerson(myPerson);
 
 enum wheatherCondition {
-  rainy,
-  sunny,
-  cloudy,
-  windy,
+  Rainy = "rainy",
+  Sunny = "sunny",
 }
+
+const currentWeather = wheatherCondition.Sunny;
+console.log(currentWeather);
+
+// OOP in typescript
+
+class Someone {
+  name: string;
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+const newPerson = new Someone("Pedro", 34);
+console.log(newPerson);
