@@ -64,3 +64,10 @@ function printPerson(person: Person) {
 }
 const myPerson: Person = { name: "Pedro", age: 34 };
 printPerson(myPerson);
+
+enum wheatherCondition {
+  rainy,
+  sunny,
+  cloudy,
+  windy,
+}
