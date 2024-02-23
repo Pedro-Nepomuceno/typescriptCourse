@@ -85,3 +85,26 @@ class Someone {
 }
 const newPerson = new Someone("Pedro", 34);
 console.log(newPerson);
+
+// acess modifiers in typescript can be PRIVATE PUBLIC OR PROTECTED
+
+class SomeoneElse {
+  public name: string;
+  private age: number;
+  protected species: string;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+  public getName(): string {
+    return this.name;
+  }
+  private getAge(): number {
+    return this.age;
+  }
+  protected getSpecies(): string {
+    return this.species;
+  }
+}
+
+// interface is a powerful tool to enforce a structure in your code
