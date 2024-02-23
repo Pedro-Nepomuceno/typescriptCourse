@@ -134,3 +134,8 @@ class Car implements Vehicle {
     console.log("cart stopped");
   }
 }
+interface Song {
+  name: string;
+  genre: string;
+  printSongName(name: string, genre: string): string;
+}
