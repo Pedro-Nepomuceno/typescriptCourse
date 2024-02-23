@@ -118,3 +118,19 @@ interface animal {
 interface mathOperation {
   (x: number, y: number): number;
 }
+const add: mathOperation = (a, b) => a * b;
+
+//interface can also be used with classes
+
+interface Vehicle {
+  start(): void;
+  stop(): void;
+}
+class Car implements Vehicle {
+  start(): void {
+    console.log("car started");
+  }
+  stop() {
+    console.log("cart stopped");
+  }
+}
