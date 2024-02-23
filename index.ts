@@ -108,3 +108,13 @@ class SomeoneElse {
 }
 
 // interface is a powerful tool to enforce a structure in your code
+// interfaces can also describe the shape of functions and classes
+
+interface animal {
+  name: string;
+  specie: string;
+  age: number;
+}
+interface mathOperation {
+  (x: number, y: number): number;
+}
