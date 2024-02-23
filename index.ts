@@ -139,3 +139,11 @@ interface Song {
   genre: string;
   printSongName(name: string, genre: string): string;
 }
+
+const music: Song = {
+  name: "By the way",
+  genre: "Rock",
+  printSongName(name, genre) {
+    return `this music is called ${name} from ${genre}`;
+  },
+};
