@@ -147,3 +147,4 @@ const music: Song = {
     return `this music is called ${name} from ${genre}`;
   },
 };
+console.log(music.printSongName("By the way", "Rock"));
