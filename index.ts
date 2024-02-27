@@ -166,3 +166,4 @@ function greet(person: Pessoa) {
   console.log(`Hello ${person.FirstName}`);
   person.sayhello();
 }
+// declaration merging allow to increase the functionalities and properties of an existing interface
