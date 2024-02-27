@@ -155,4 +155,14 @@ interface Pessoa {
   sayhello(): void;
 }
 
-// const Pedro:
+const pedro: Pessoa = {
+  FirstName: "Pedro",
+  lastName: "Lima",
+  sayhello() {
+    console.log(`Hello`);
+  },
+};
+function greet(person: Pessoa) {
+  console.log(`Hello ${person.FirstName}`);
+  person.sayhello();
+}
