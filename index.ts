@@ -148,3 +148,11 @@ const music: Song = {
   },
 };
 console.log(music.printSongName("By the way", "Rock"));
+
+interface Pessoa {
+  FirstName: string;
+  lastName: string;
+  sayhello(): void;
+}
+
+// const Pedro:
