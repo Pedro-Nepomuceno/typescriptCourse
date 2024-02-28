@@ -187,3 +187,10 @@ function uniqueDataTypes<Type>(item: Type, defaultValue: Type): [Type, Type] {
 }
 const result = uniqueDataTypes<number>(10, 20);
 console.log(result);
+
+function filterArray<type>(
+  array: type[],
+  condition: (item: type) => boolean
+): type[] {
+  return array.filter((item) => condition(item));
+}
