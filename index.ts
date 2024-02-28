@@ -208,3 +208,21 @@ function narrowingType(value: myType): void {
     console.log(value.toUpperCase());
   }
 }
+
+type employee = {
+  id: number;
+  function: string;
+};
+type Manager = {
+  department: string;
+  role: string;
+};
+
+type employeeInfo = employee & Manager;
+
+const manager: employeeInfo = {
+  id: 123,
+  function: "gerente",
+  department: "engeneering",
+  role: "manager",
+};
