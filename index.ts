@@ -186,3 +186,6 @@ const myCar: Car = {
   model: "Toyota",
 };
 // generics
+function uniqueDataTypes<Type>(item: Type, defaultValue: Type): [Type, Type] {
+  return [item, defaultValue];
+}
