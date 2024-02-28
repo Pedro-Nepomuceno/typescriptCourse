@@ -194,3 +194,5 @@ function filterArray<type>(
 ): type[] {
   return array.filter((item) => condition(item));
 }
+
+const numArray = [1, 3, 4, 5, 6, 7, 8];
