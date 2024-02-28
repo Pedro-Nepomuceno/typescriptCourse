@@ -91,7 +91,6 @@ console.log(newPerson);
 class SomeoneElse {
   public name: string;
   private age: number;
-  protected species: string;
   constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
@@ -101,9 +100,6 @@ class SomeoneElse {
   }
   private getAge(): number {
     return this.age;
-  }
-  protected getSpecies(): string {
-    return this.species;
   }
 }
 
@@ -189,3 +185,5 @@ const myCar: Car = {
 function uniqueDataTypes<Type>(item: Type, defaultValue: Type): [Type, Type] {
   return [item, defaultValue];
 }
+const result = uniqueDataTypes<number>(10, 20);
+console.log(result);
