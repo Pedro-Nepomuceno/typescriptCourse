@@ -167,3 +167,22 @@ function greet(person: Pessoa) {
   person.sayhello();
 }
 // declaration merging allow to increase the functionalities and properties of an existing interface
+interface Car {
+  model: string;
+  start(): void;
+}
+interface Car {
+  stop(): void;
+  year: number;
+}
+const myCar: Car = {
+  start() {
+    console.log("car started");
+  },
+  stop() {
+    console.log("car stopped");
+  },
+  year: 2024,
+  model: "Toyota",
+};
+// generics
