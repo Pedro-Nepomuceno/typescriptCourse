@@ -198,3 +198,13 @@ function filterArray<type>(
 const numArray = [1, 3, 4, 5, 6, 7, 8];
 const evenNumber = filterArray<number>(numArray, (num) => num % 2 === 0);
 console.log(evenNumber);
+
+// type narrowing
+
+type myType = string | number;
+
+function narrowingType(value: myType): void {
+  if (typeof value === "string") {
+    console.log(value.toUpperCase());
+  }
+}
