@@ -8,11 +8,19 @@ const addNumero = ArrowFunction(2, 3);
 console.log(addNumero);
 2;
 
-interface Todo {}
+interface Todo {
+  id: number;
+  userId: number;
+  completed: boolean;
+  title: string;
+}
 
 const fectchData = async () => {
   try {
-    const response = AxiosResponse<Todo>;
+    const response: AxiosResponse<Todo> = await axios.get(
+      "https://jsonplaceholder.typicode.com/todos/1"
+    );
+    console.log("Todo: ", response.data);
   } catch (error) {
     console.log(error);
   }
