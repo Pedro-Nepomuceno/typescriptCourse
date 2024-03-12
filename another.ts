@@ -25,3 +25,5 @@ const fectchData = async () => {
     console.log(error);
   }
 };
+
+// setting new type
